@@ -76,22 +76,22 @@ export default function Home() {
                 transition={{duration: 1}}
                 className='flex items-center gap-3'>
               
-                <Button className='rounded-full bg-gradient-to-r from-rose-400 to-indigo-600 text-white transition-transform hover:scale-105'> Resume </Button>
+              <Link href="/Resume_AH_Feb2025.pdf" ><Button className='rounded-full bg-gradient-to-r from-rose-400 to-indigo-600 text-white transition-transform hover:scale-105'> Resume </Button></Link>
 
-                <Link href="#" className="text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors">
+                <Link href="https://www.github.com/amarzbar" className="text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors">
                 {/* Github */}
                 <FaGithub className="h-6 w-6"/>
                 </Link>
-                <Link href="#" className="text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors">
+                <Link href="https://www.linkedin.com/in/ahusse45" className="text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors">
                 {/* LinkedIn */}
                 <FaLinkedin className="h-6 w-6"/>
                 </Link>
-                <Link href="#" className="text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors">
+                <Link href="https://bsky.app/profile/a-marz-bar.bsky.social" className="text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors">
                 {/* Bluesky */}
                 <FaBluesky className="h-6 w-6"/>
                 </Link>
 
-                <Link href="#" className="text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors">
+                <Link href="mailto:ahusse45@uwo.ca" className="text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors">
                 {/* Email */}
                 <FaEnvelope className="h-6 w-6"/>
                 </Link>
