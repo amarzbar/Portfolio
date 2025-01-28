@@ -3,7 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "next-themes";
 
-const inter = Inter({subsets: ["latin"]});
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Ammar Hussein - Software Engineer",
@@ -19,13 +19,15 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={`${inter.className} antialiased`}
+        suppressHydrationWarning
       >
         {/* Wrapper component to use themeing and preferences*/}
-        <ThemeProvider 
-        attribute={"class"}
-        enableSystem
-        defaultTheme="system"> 
-        {children}
+        <ThemeProvider
+          attribute={"class"}
+          enableSystem
+          defaultTheme="system"
+        >
+          {children}
         </ThemeProvider>
       </body>
     </html>
