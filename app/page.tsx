@@ -183,7 +183,6 @@ export default function Home() {
                 {project.techStack.map((tech) => (
                   <Badge 
                   key={tech.toLowerCase()} 
-                  variant="secondary" 
                   className="text-xs"
                   >
                   {tech}
