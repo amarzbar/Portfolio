@@ -2,6 +2,7 @@
 import { ThemeToggle } from '@/components/theme-toggle';
 import Image from 'next/image';
 import profileImage from '../public/porto.webp';
+import githubPlaceholder from '../public/GitHub-Logo.wine.svg';
 import {motion} from 'framer-motion';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
@@ -170,7 +171,8 @@ export default function Home() {
           className="bg-gray-50 overflow-auto dark:bg-zinc-900 border-gray-200 dark:border-zinc-800 transition-transform duration-300 hover:scale-105 cursor-pointer p-4"
         >
           <Image 
-            src="/Github-Logo.wine.svg"
+            unoptimized
+            src={githubPlaceholder}
             width={500}
             height={500}
             alt={`${project.name} preview`} 
